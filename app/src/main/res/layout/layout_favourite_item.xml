@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="4dp"
+    android:background="@drawable/custom_item_fruit">
+    <ImageView
+        android:id="@+id/imageViewFavourite"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNameFavourite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Orange Fruit"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnFavourite"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFavourite"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBarFavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progressDrawable="@drawable/custom_rating_bar"
+        android:rating="3.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFavourite"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameFavourite" />
+    <TextView
+        android:id="@+id/userReviewsFavourite"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:text="99+ reviews"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:gravity="bottom"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnFavourite"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFavourite"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameFavourite" />
+    <ImageButton
+        android:id="@+id/imgbtnFavourite"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/heartsolid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

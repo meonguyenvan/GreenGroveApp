@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GreenGrove</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_favourite">Favourite</string>
+    <string name="nav_history">History</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_signout">Đăng Xuất</string>
+    <string name="nav_changepassword">Change Password</string>
+    <string name="nav_drawer_open">Open</string>
+    <string name="nav_drawer_close">Close</string>
+    <string name="default_web_client_id">412405212795-3hk3sne711j1528dk2i4bb2o95cndn8q.apps.googleusercontent.com</string>
+</resources>

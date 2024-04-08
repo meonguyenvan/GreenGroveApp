@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="4dp"
+    android:background="@drawable/custom_item_fruit">
+    <ImageView
+        android:id="@+id/imageViewCart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvNameCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Orange Fruit"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnDeleteCart"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCart"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvPriceCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="29.99$"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnDeleteCart"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCart"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameCart" />
+
+    <ImageButton
+        android:id="@+id/imgbtnMinusCart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/minus_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCart"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceCart" />
+    <EditText
+        android:id="@+id/edSLCart"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="01"
+        android:inputType="number"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnMinusCart"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceCart" />
+    <ImageButton
+        android:id="@+id/imgbtnPlusCart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/plus_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edSLCart"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceCart" />
+    <ImageButton
+        android:id="@+id/imgbtnDeleteCart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_elip"
+        android:src="@drawable/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceCart"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

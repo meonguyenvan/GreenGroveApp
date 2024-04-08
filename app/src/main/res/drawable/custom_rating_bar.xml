@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/empty_stars"
+        android:drawable="@drawable/start" />
+    <item android:id="@+id/filled_stars"
+        android:drawable="@drawable/unstart" />
+</layer-list>

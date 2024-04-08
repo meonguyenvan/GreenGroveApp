@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:elevation="8dp"
+        android:background="@drawable/header_linear"
+        android:paddingLeft="10dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgbtnBackAC"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/nextleft1" />
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Edit Profile"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnCheck"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/check"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearImageViewPF"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:background="#00cc00"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutHeader">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageViewPFAC"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#555555"
+            android:elevation="-4dp"
+            android:gravity="center"
+            android:text="Chạm để thay đổi"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:background="@drawable/custom_textview"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearImageViewPF"
+        tools:layout_editor_absoluteX="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Tên"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tvNamePF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/next_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|end"
+            android:padding="10dp"
+            android:text="Thiết lập ngay"
+            android:textColor="#000000"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_textview"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutName"
+        tools:layout_editor_absoluteX="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Username"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvUserNamePF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/next_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|end"
+            android:padding="10dp"
+            android:text="Thiết lập ngay"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_textview"
+        android:elevation="4dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutUserName"
+        tools:layout_editor_absoluteX="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Giới tính"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tvGioiTinhPF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/next_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|end"
+            android:padding="10dp"
+            android:text="Thiết lập ngay"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_textview"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutGioiTinh"
+        tools:layout_editor_absoluteX="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Ngày sinh"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvNgaySinhPF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/next_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|end"
+            android:padding="10dp"
+            android:text="Thiết lập ngay"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSDT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_textview"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutNgaySinh"
+        tools:layout_editor_absoluteX="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Số điện thoại"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvSDTPF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/next_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|end"
+            android:padding="10dp"
+            android:text="Thiết lập ngay"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bottom_textview"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutSDT"
+        tools:layout_editor_absoluteX="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvEmailPF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/next_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|end"
+            android:padding="10dp"
+            android:text="Thiết lập ngay"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
